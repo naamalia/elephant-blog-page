@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-size: 1.125rem;
+    color: #707070;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 3rem;
+    color: #312614;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+   
+}
+
+span {
+    color: #B7832F;
+}
+
+p {
+    margin-top: 0;
+    
+}
+
+
+/* Layout */
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    width: 90%;
+    border: 2px solid magenta;
+}
+
+.columns {
+    display: flex;
+    margin: 1em 0;
+    justify-content: space-between;
+    border: 2px blue solid;
+}
+
+.col {
+    border: 2px orange solid;
+}
+
+
+.col-bg {
+    background: #312614;
+    color: white;  
+    padding: 1em;
+}
+
+.col-1 {
+    width: 20%;
+}
+
+.col-2 {
+    width: 45%;
+}
+
+.col-3 {
+    width: 70%;
+}
+
+@media (max-width: 600px) {
+    .columns {
+        flex-direction: column;
+    }
+
+    .col-1,
+    .col-2,
+    .col-3 {
+        width: 100%;
+    }
+
+    .col-bg {
+        width: inherit;
+        padding: 1em;
+    }
+}
